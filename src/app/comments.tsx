@@ -24,7 +24,7 @@ const COMMENTS = [
 export function Comments() {
   return (
     <section className="w-full max-w-2xl mx-auto flex flex-col px-5 pb-20">
-      <Typography variant="h4" className=" md:text-center" color="blue-gray">
+      <Typography  placeholder={undefined}  variant="h4" className=" md:text-center" color="blue-gray">
         3 Comments
       </Typography>
       <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-1">
@@ -41,6 +41,7 @@ export function Comments() {
         </div>
       </div>
       <Typography
+       placeholder={undefined}
         variant="h4"
         className="my-6 md:my-14 md:text-center"
         color="blue-gray"
