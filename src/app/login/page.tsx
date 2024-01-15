@@ -69,7 +69,7 @@ const Login = () => {
           color="gray"
           className="mb-4 grid h-28 place-items-center"
         >
-          <Typography variant="h3" color="white">
+          <Typography placeholder={undefined} variant="h3" color="white">
           Sign In
           </Typography>
         </CardHeader>
@@ -85,9 +85,10 @@ const Login = () => {
           <Button placeholder={undefined} variant="gradient" fullWidth onClick={handleLogin}>
             Continuar
           </Button>
-          <Typography variant="small" className="mt-6 flex justify-center">
+          <Typography placeholder={undefined} variant="small" className="mt-6 flex justify-center">
             No tienes una cuenta?
             <Typography
+            placeholder={undefined}
               as="a"
               href="#signup"
               variant="small"
