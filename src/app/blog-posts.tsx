@@ -36,7 +36,7 @@ const SIMPLE_CONTENT = [
 export function BlogPost() {
   return (
     <section className="w-full max-w-6xl mx-auto flex flex-col items-center px-4 py-20">
-        <Button color="gray" className="mb-3" size="sm">
+        <Button  placeholder={undefined} color="gray" className="mb-3" size="sm">
         BLOG
       </Button>
       <Typography variant="h3" className="text-center" color="blue-gray">
