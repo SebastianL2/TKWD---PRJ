@@ -14,8 +14,8 @@ import {
 } from "@material-tailwind/react";
 
 const Login = () => {
-  const [email, setEmail] = useState('ador@gmail.com');
-  const [password, setPassword] = useState('contraseña123');
+  const [email, setEmail] = useState('ad3r@gmail.com');
+  const [password, setPassword] = useState('contrasfaeña123');
   const [message, setMessage] = useState('');
   const router = useRouter()
 
@@ -33,7 +33,9 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:3001/trainer/login', {
+      const efec =process.env.NEXT_PUBLIC_API_URL;
+    
+      const response = await fetch(`${efec}trainer/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
