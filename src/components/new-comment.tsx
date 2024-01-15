@@ -15,6 +15,7 @@ export function NewComment() {
           />
         </div>
         <Typography
+         placeholder={undefined}
           variant="small"
           className=" font-bold flex items-center gap-2 !text-gray-900"
         >

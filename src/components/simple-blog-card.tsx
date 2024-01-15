@@ -18,14 +18,14 @@ interface SimpleContentCard {
       <div className=" pb-10">
         <div className="flex items-center mb-3 gap-2">
           <Icon className="h-5 w-5 text-gray-900" />
-          <Typography className="w-full" variant="h6">
+          <Typography placeholder={undefined} className="w-full" variant="h6">
             {title}
           </Typography>
         </div>
-        <Typography className="!text-base w-7/12 md:w-full mb-3 font-normal !text-gray-700">
+        <Typography placeholder={undefined} className="!text-base w-7/12 md:w-full mb-3 font-normal !text-gray-700">
           {subtitle}
         </Typography>
-        <Typography className="!text-xs font-normal !text-gray-500">
+        <Typography  placeholder={undefined} className="!text-xs font-normal !text-gray-500">
           {name}
         </Typography>
       </div>

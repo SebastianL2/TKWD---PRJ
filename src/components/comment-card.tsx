@@ -37,16 +37,17 @@ export function CommentCard({ img, name, desc, hours }: CommentCardProps) {
         <div>
           <div className="flex gap-1 mb-3 items-center">
             <Typography
+            placeholder={undefined}
               variant="small"
               className=" font-bold flex items-center gap-2 !text-gray-900"
             >
               {name}
             </Typography>
-            <Typography variant="small" className="font-medium !text-gray-500">
+            <Typography  placeholder={undefined} variant="small" className="font-medium !text-gray-500">
               {hours}
             </Typography>
           </div>
-          <Typography className="w-full font-normal mb-4 !text-gray-500">
+          <Typography placeholder={undefined} className="w-full font-normal mb-4 !text-gray-500">
             {desc}
           </Typography>
           <div className="!w-full flex justify-end">

@@ -38,7 +38,7 @@ export function BlogPostCard({
         />
       </CardHeader>
       <CardBody placeholder={undefined} className="p-6">
-        <Typography variant="small" color="blue" className="mb-2 !font-medium">
+        <Typography placeholder={undefined} variant="small" color="blue" className="mb-2 !font-medium">
           {tag}
         </Typography>
         <Typography
@@ -50,7 +50,7 @@ export function BlogPostCard({
         >
           {title}
         </Typography>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography placeholder={undefined} className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
         <div className="flex items-center gap-4">

@@ -15,6 +15,7 @@ function NavItem({ children }: { children: React.ReactNode }) {
   return (
     <li>
       <Typography
+       placeholder={undefined}
         as="a"
         href="#"
         variant="paragraph"
@@ -65,6 +66,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
+         placeholder={undefined}
           as="a"
           href="https://www.material-tailwind.com"
           target="_blank"

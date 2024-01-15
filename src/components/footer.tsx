@@ -23,6 +23,7 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography
+            placeholder={undefined}
             as="a"
             href="https://www.material-tailwind.com"
             target="_blank"
@@ -34,12 +35,13 @@ export function Footer() {
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
-                <Typography variant="h6" color="blue-gray" className="mb-4">
+                <Typography placeholder={undefined} variant="h6" color="blue-gray" className="mb-4">
                   {title}
                 </Typography>
                 {items.map((link) => (
                   <li key={link}>
                     <Typography
+                    placeholder={undefined} 
                       as="a"
                       href="#"
                       variant="small"
@@ -55,14 +57,15 @@ export function Footer() {
         </div>
         <div className="mt-16 flex flex-wrap items-end justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
           <div className="text-center md:text-start">
-            <Typography variant="h4" color="blue-gray" className="mb-2">
+            <Typography placeholder={undefined} variant="h4" color="blue-gray" className="mb-2">
               The reward for getting on the stage is fame.
             </Typography>
-            <Typography className="font-normal !text-gray-700">
+            <Typography placeholder={undefined} className="font-normal !text-gray-700">
               The price of fame is you can&apos;t get off the stage.
             </Typography>
           </div>
           <Typography
+           placeholder={undefined}
             color="gray"
             className="text-center font-normal !text-gray-700"
           >
