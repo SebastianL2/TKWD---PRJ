@@ -62,8 +62,9 @@ const Login = () => {
 
   return (
     <div>
-      <Card className="mr-auto mt-16 ml-auto w-96">
+      <Card placeholder={undefined} className="mr-auto mt-16 ml-auto w-96">
         <CardHeader
+         placeholder={undefined}
           variant="gradient"
           color="gray"
           className="mb-4 grid h-28 place-items-center"
@@ -72,7 +73,7 @@ const Login = () => {
           Sign In
           </Typography>
         </CardHeader>
-        <CardBody className="flex flex-col gap-4">
+        <CardBody placeholder={undefined} className="flex flex-col gap-4">
           <Input crossOrigin={undefined} label="Email" size="lg" value={email} onChange={handleEmailChange} />
           <Input crossOrigin={undefined} label="Password" size="lg" type="password" value={password} onChange={handlePasswordChange} />
           <a>{message}</a>
@@ -80,8 +81,8 @@ const Login = () => {
             <Checkbox crossOrigin={undefined} label="Remember Me" />
           </div>
         </CardBody>
-        <CardFooter className="pt-0">
-          <Button variant="gradient" fullWidth onClick={handleLogin}>
+        <CardFooter placeholder={undefined} className="pt-0">
+          <Button placeholder={undefined} variant="gradient" fullWidth onClick={handleLogin}>
             Continuar
           </Button>
           <Typography variant="small" className="mt-6 flex justify-center">

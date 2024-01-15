@@ -124,8 +124,8 @@ import { useState, useEffect } from 'react'
   }, [])
   
     return (
-      <Card className="h-full w-full">
-        <CardHeader floated={false} shadow={false} className="rounded-none">
+      <Card placeholder={undefined} className="h-full w-full">
+        <CardHeader placeholder={undefined} floated={false} shadow={false} className="rounded-none">
           <div className="mb-8 flex items-center justify-between gap-8">
             <div>
               <Typography variant="h5" color="blue-gray">
@@ -136,19 +136,19 @@ import { useState, useEffect } from 'react'
               </Typography>
             </div>
             <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
-              <Button variant="outlined" size="sm">
+              <Button placeholder={undefined} variant="outlined" size="sm">
                 view all
               </Button>
-              <Button className="flex items-center gap-3" size="sm">
+              <Button placeholder={undefined}  className="flex items-center gap-3" size="sm">
                 <UserPlusIcon strokeWidth={2} className="h-4 w-4" /> Add member
               </Button>
             </div>
           </div>
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <Tabs value="all" className="w-full md:w-max">
-              <TabsHeader>
+              <TabsHeader placeholder={undefined}>
                 {TABS.map(({ label, value }) => (
-                  <Tab key={value} value={value}>
+                  <Tab placeholder={undefined} key={value} value={value}>
                     &nbsp;&nbsp;{label}&nbsp;&nbsp;
                   </Tab>
                 ))}
@@ -163,7 +163,7 @@ import { useState, useEffect } from 'react'
             </div>
           </div>
         </CardHeader>
-        <CardBody className="overflow-scroll px-0">
+        <CardBody placeholder={undefined} className="overflow-scroll px-0">
           <table className="mt-4 w-full min-w-max table-auto text-left">
             <thead>
               <tr>
@@ -215,7 +215,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {codigo}
                           </Typography>
                          
@@ -226,10 +226,10 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {nombre}
                           </Typography>
-                          <Typography variant="small" color="blue-gray" className="font-normal opacity-70">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal opacity-70">
                             {email}
                           </Typography>
                         </div>
@@ -238,7 +238,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {cedula}
                           </Typography>
                        
@@ -248,7 +248,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {DAN}
                           </Typography>
                       
@@ -258,7 +258,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {licencia}
                           </Typography>
                         
@@ -268,7 +268,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {clase}
                           </Typography>
                         
@@ -278,7 +278,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {formattedFechaExpedicion}
                           </Typography>
                         
@@ -288,7 +288,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {formattedFechaActualizacion}
                           </Typography>
                         
@@ -299,7 +299,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {vigencia}
                           </Typography>
                         
@@ -309,7 +309,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {solicita}
                           </Typography>
                         
@@ -319,7 +319,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
+                          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
                             {role}
                           </Typography>
                         
@@ -330,6 +330,7 @@ import { useState, useEffect } from 'react'
                     <td className={classes}>
                       <div className="w-max">
                         <Chip
+                        
                           variant="ghost"
                           size="sm"
                           value={estadoSolicitud ? "Entregado" : "No entregado"}
@@ -339,9 +340,9 @@ import { useState, useEffect } from 'react'
                     </td>
 
                     <td className={classes}>
-                      <Tooltip content="Edit User">
-                        <IconButton variant="text">
-                          <PencilIcon className="h-4 w-4" />
+                      <Tooltip placeholder={undefined} content="Edit User">
+                        <IconButton placeholder={undefined} variant="text">
+                          <PencilIcon  className="h-4 w-4" />
                         </IconButton>
                       </Tooltip>
                     </td>
@@ -353,15 +354,15 @@ import { useState, useEffect } from 'react'
             </tbody>
           </table>
         </CardBody>
-        <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
+        <CardFooter placeholder={undefined} className="flex items-center justify-between border-t border-blue-gray-50 p-4">
           <Typography variant="small" color="blue-gray" className="font-normal">
             Page 1 of 10
           </Typography>
           <div className="flex gap-2">
-            <Button variant="outlined" size="sm">
+            <Button placeholder={undefined} variant="outlined" size="sm">
               Previous
             </Button>
-            <Button variant="outlined" size="sm">
+            <Button placeholder={undefined} variant="outlined" size="sm">
               Next
             </Button>
           </div>

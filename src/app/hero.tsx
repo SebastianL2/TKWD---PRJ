@@ -10,7 +10,7 @@ function Hero() {
     <div className="grid min-h-screen px-8">
       <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
         <div className="absolute max-w-[160vh] mx-auto  h-[70vh]">
-          <Carousel className="rounded-xl h-full">
+          <Carousel placeholder={undefined} className="rounded-xl h-full">
             <img
               src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
               alt="image 1"
@@ -45,13 +45,13 @@ function Hero() {
           Connect with us on:
         </Typography>
         <div className="gap-8 flex">
-          <IconButton variant="text" color="white" size="sm">
+          <IconButton placeholder={undefined} variant="text" color="white" size="sm">
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
-          <IconButton variant="text" color="white" size="sm">
+          <IconButton placeholder={undefined} variant="text" color="white" size="sm">
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
-          <IconButton variant="text" color="white" size="sm">
+          <IconButton placeholder={undefined} variant="text" color="white" size="sm">
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
         </div>
