@@ -29,6 +29,7 @@ function Hero() {
           </Carousel>
     </div>
         <Typography
+         placeholder={undefined}
           variant="lead"
           color="white"
           className=" mt-24 mb-12 w-full md:max-w-full lg:max-w-3xl"
@@ -36,6 +37,7 @@ function Hero() {
           Introduction: Join us in a a journey into the world of life!
         </Typography>
         <Typography
+         placeholder={undefined}
           variant="paragraph"
           color="white"
           className="mt-1 mb-7 font-medium uppercase"
