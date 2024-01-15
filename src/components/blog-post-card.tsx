@@ -42,6 +42,7 @@ export function BlogPostCard({
           {tag}
         </Typography>
         <Typography
+         placeholder={undefined} 
           as="a"
           href="#"
           variant="h5"
