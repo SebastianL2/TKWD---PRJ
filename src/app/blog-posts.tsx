@@ -39,7 +39,7 @@ export function BlogPost() {
         <Button  placeholder={undefined} color="gray" className="mb-3" size="sm">
         BLOG
       </Button>
-      <Typography variant="h3" className="text-center" color="blue-gray">
+      <Typography placeholder={undefined}  variant="h3" className="text-center" color="blue-gray">
         Check out the latest articles
       </Typography>
       <Typography
