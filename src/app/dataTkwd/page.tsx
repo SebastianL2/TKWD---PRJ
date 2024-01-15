@@ -89,7 +89,7 @@ import { useState, useEffect } from 'react'
     },
   ];
  
-  function dataTkwd() {
+  function DataTkwd() {
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(true)
 
@@ -352,4 +352,4 @@ import { useState, useEffect } from 'react'
     );
   }
 
-  export default dataTkwd;
+  export default DataTkwd;

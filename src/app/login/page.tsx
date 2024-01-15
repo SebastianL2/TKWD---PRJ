@@ -48,7 +48,7 @@ const Login = () => {
   
       if (response.ok) {
         // Success status code, navigate to the desired page
-        router.push('/dataTkwd')
+        router.push('/DataTkwd')
       } else {
         // Handle other status codes, e.g., display an error message
         console.error('API request failed with status:', response.status);
