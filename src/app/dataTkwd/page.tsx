@@ -128,10 +128,10 @@ import { useState, useEffect } from 'react'
         <CardHeader placeholder={undefined} floated={false} shadow={false} className="rounded-none">
           <div className="mb-8 flex items-center justify-between gap-8">
             <div>
-              <Typography variant="h5" color="blue-gray">
+              <Typography placeholder={undefined}  variant="h5" color="blue-gray">
                 Members list
               </Typography>
-              <Typography color="gray" className="mt-1 font-normal">
+              <Typography placeholder={undefined}  color="gray" className="mt-1 font-normal">
                 See information about all members
               </Typography>
             </div>
@@ -173,6 +173,7 @@ import { useState, useEffect } from 'react'
                     className="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50"
                   >
                     <Typography
+                      placeholder={undefined} 
                       variant="small"
                       color="blue-gray"
                       className="flex items-center justify-between gap-2 font-normal leading-none opacity-70"
