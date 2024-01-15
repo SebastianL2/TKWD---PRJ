@@ -56,6 +56,7 @@ export function Navbar() {
 
   return (
     <MTNavbar
+     placeholder={undefined}
       fullWidth
       shadow={false}
       blurred={false}
@@ -83,15 +84,16 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
           <Link href={'/login'}>
-          <Button variant="text" color={isScrolling ? "gray" : "white"}>
+          <Button placeholder={undefined} variant="text" color={isScrolling ? "gray" : "white"}>
             Log in
           </Button>
           </Link>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
+            <Button  placeholder={undefined} color={isScrolling ? "gray" : "white"}>blocks</Button>
           </a>
         </div>
         <IconButton
+         placeholder={undefined}
           variant="text"
           onClick={handleOpen}
           color={isScrolling ? "gray" : "white"}
@@ -112,9 +114,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-2">
-            <Button variant="text">Log in</Button>
+            <Button placeholder={undefined} variant="text">Log in</Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
+              <Button  placeholder={undefined} color="gray">blocks</Button>
             </a>
           </div>
         </div>

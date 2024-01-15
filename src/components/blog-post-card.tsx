@@ -27,8 +27,8 @@ export function BlogPostCard({
   date,
 }: BlogPostCardProps) {
   return (
-    <Card shadow={true}>
-      <CardHeader>
+    <Card placeholder={undefined} shadow={true}>
+      <CardHeader placeholder={undefined}>
         <Image
           width={768}
           height={768}
@@ -37,7 +37,7 @@ export function BlogPostCard({
           className="h-full w-full scale-110 object-cover"
         />
       </CardHeader>
-      <CardBody className="p-6">
+      <CardBody placeholder={undefined} className="p-6">
         <Typography variant="small" color="blue" className="mb-2 !font-medium">
           {tag}
         </Typography>
@@ -55,6 +55,7 @@ export function BlogPostCard({
         </Typography>
         <div className="flex items-center gap-4">
           <Avatar
+           placeholder={undefined}
             size="sm"
             variant="circular"
             src={author.img}
@@ -62,6 +63,7 @@ export function BlogPostCard({
           />
           <div>
             <Typography
+             placeholder={undefined}
               variant="small"
               color="blue-gray"
               className="mb-0.5 !font-medium"
@@ -69,6 +71,7 @@ export function BlogPostCard({
               {author.name}
             </Typography>
             <Typography
+             placeholder={undefined}
               variant="small"
               color="gray"
               className="text-xs !text-gray-500 font-normal"

@@ -19,11 +19,12 @@ interface CommentCardProps {
 export function CommentCard({ img, name, desc, hours }: CommentCardProps) {
   return (
     <Card
+     placeholder={undefined}
       shadow={false}
       color="transparent"
       className="grid items-center gap-6 "
     >
-      <CardBody className="p-0 gap-5 flex ">
+      <CardBody placeholder={undefined} className="p-0 gap-5 flex ">
         <div className=" !m-0 h-full  w-full  max-h-[40px] max-w-[40px] ">
           <Image
             width={768}
@@ -51,6 +52,7 @@ export function CommentCard({ img, name, desc, hours }: CommentCardProps) {
           <div className="!w-full flex justify-end">
             <div className="flex items-center gap-2">
               <Button
+               placeholder={undefined}
                 size="sm"
                 variant="text"
                 color="gray"
@@ -60,6 +62,7 @@ export function CommentCard({ img, name, desc, hours }: CommentCardProps) {
                 Reply
               </Button>
               <Button
+               placeholder={undefined}
                 size="sm"
                 variant="text"
                 color="red"

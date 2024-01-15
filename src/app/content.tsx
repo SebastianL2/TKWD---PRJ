@@ -97,13 +97,13 @@ export function Content() {
         <div className="container mx-auto px-4 py-20">
           <div className="w-full mb-10 md:flex items-center justify-between">
             <div className="flex mb-5 md:mb-0 items-center gap-3">
-              <Button size="sm" color="gray" variant="outlined">
+              <Button placeholder={undefined} size="sm" color="gray" variant="outlined">
                 stories
               </Button>
-              <Button size="sm" color="gray" variant="outlined">
+              <Button placeholder={undefined} size="sm" color="gray" variant="outlined">
                 design
               </Button>
-              <Button size="sm" color="gray" variant="outlined">
+              <Button  placeholder={undefined} size="sm" color="gray" variant="outlined">
                 catle
               </Button>
             </div>
@@ -147,6 +147,7 @@ export function Content() {
               </div>
             </div>
             <Button
+             placeholder={undefined}
               color="gray"
               className="w-1/2 md:w-fit flex-shrink-0"
               size="md"

@@ -29,7 +29,7 @@ export function NewComment() {
             variant="static"
             placeholder="Write a nice reply or go home..."
           />
-          <Button color="gray" className="mt-4" size="md">
+          <Button placeholder={undefined} color="gray" className="mt-4" size="md">
             button
           </Button>
         </form>
