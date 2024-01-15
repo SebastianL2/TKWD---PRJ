@@ -5,7 +5,6 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import Content from "./content";
 import Comments from "./comments";
-import BlogPosts from "./blog-posts";
 
 export default function Campaign() {
   return (
@@ -14,7 +13,7 @@ export default function Campaign() {
       <Hero />
       <Content />
       <Comments />
-      <BlogPosts />
+      
       <Footer />
     </>
   );
