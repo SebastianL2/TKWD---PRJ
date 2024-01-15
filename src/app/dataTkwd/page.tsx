@@ -88,9 +88,26 @@ import { useState, useEffect } from 'react'
       date: "04/10/21",
     },
   ];
- 
+  interface DatosUsuario {
+    codigo: string;
+    DAN: string;
+    cedula: string;
+    clase: string;
+    createdAt: string;
+    email: string;
+    estadoSolicitud: string;
+    fechaActualizacion: string;
+    fechaExpedicion: string;
+    licencia: string;
+    nombre: string;
+    password: string;
+    role: string;
+    solicita: string;
+    updatedAt: string;
+    vigencia: string;
+  }
   function DataTkwd() {
-    const [data, setData] = useState(null)
+    const [data, setData] = useState<Array<DatosUsuario> | null>(null);
     const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -139,6 +156,7 @@ import { useState, useEffect } from 'react'
             </Tabs>
             <div className="w-full md:w-72">
               <Input
+                crossOrigin={undefined}
                 label="Search"
                 icon={<MagnifyingGlassIcon className="h-5 w-5" />}
               />

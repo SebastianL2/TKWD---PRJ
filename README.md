@@ -5,7 +5,7 @@
 ![Image](https://s3.amazonaws.com/creativetim_bucket/products/747/original/material-tailwind-react-blog-post-details-template-thumbnail.jpg)
 
 Introducing Tailwind Blog Page, a modern and feature-rich blog template built on the foundation of Tailwind CSS and Material Tailwind.
-
+@types/react 18.2.47
 Are you in search of a professionally designed and highly customizable blog template tailored for bloggers, writers, and content creators to establish a strong online presence and share their thoughts with the world? Look no further! We are excited to present to you our Free Blog Page Template, meticulously crafted to cater to the needs of blog website developers like you.
 
 This template, designed with Tailwind CSS and Material Tailwind, offers effortless customization to align perfectly with your website's unique branding. The free blog template includes essential features such as a hero, categories, blog posts, and related articles sections.

@@ -48,7 +48,7 @@ const Login = () => {
   
       if (response.ok) {
         // Success status code, navigate to the desired page
-        router.push('/DataTkwd')
+        router.push('/dataTkwd')
       } else {
         // Handle other status codes, e.g., display an error message
         console.error('API request failed with status:', response.status);
@@ -73,11 +73,11 @@ const Login = () => {
           </Typography>
         </CardHeader>
         <CardBody className="flex flex-col gap-4">
-          <Input label="Email" size="lg" value={email} onChange={handleEmailChange} />
-          <Input label="Password" size="lg" type="password" value={password} onChange={handlePasswordChange} />
+          <Input crossOrigin={undefined} label="Email" size="lg" value={email} onChange={handleEmailChange} />
+          <Input crossOrigin={undefined} label="Password" size="lg" type="password" value={password} onChange={handlePasswordChange} />
           <a>{message}</a>
           <div className="-ml-2.5">
-            <Checkbox label="Remember Me" />
+            <Checkbox crossOrigin={undefined} label="Remember Me" />
           </div>
         </CardBody>
         <CardFooter className="pt-0">
