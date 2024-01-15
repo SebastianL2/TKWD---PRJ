@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const NAV_MENU = ["Home", "About Us", "Contact Us"];
 
@@ -81,9 +82,11 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
+          <Link href={'/login'}>
           <Button variant="text" color={isScrolling ? "gray" : "white"}>
             Log in
           </Button>
+          </Link>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
             <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
           </a>
