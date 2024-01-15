@@ -356,7 +356,7 @@ import { useState, useEffect } from 'react'
           </table>
         </CardBody>
         <CardFooter placeholder={undefined} className="flex items-center justify-between border-t border-blue-gray-50 p-4">
-          <Typography variant="small" color="blue-gray" className="font-normal">
+          <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
             Page 1 of 10
           </Typography>
           <div className="flex gap-2">
