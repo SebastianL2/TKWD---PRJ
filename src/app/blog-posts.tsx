@@ -43,6 +43,7 @@ export function BlogPost() {
         Check out the latest articles
       </Typography>
       <Typography
+       placeholder={undefined} 
         variant="lead"
         className="mt-2 mb-8 w-full text-center font-normal !text-gray-500 max-w-4xl"
       >
@@ -57,12 +58,13 @@ export function BlogPost() {
             <Card shadow={false} className="p-0">
               <CardBody className="p-0 pb-5">
                 <Typography
+                 placeholder={undefined} 
                   variant="h3"
                   className="leading-[45px] mb-4 !text-gray-900 "
                 >
                   Exploring the Role of Epigenetics in Inherited Traits
                 </Typography>
-                <Typography className="text-normal mb-4 !text-base text-blue-gray-500 ">
+                <Typography   placeholder={undefined}  className="text-normal mb-4 !text-base text-blue-gray-500 ">
                   Investigate the emerging field of epigenetics and its impact
                   on understanding how environmental factors can influence gene
                   expression and inheritance.
@@ -78,10 +80,10 @@ export function BlogPost() {
                     />
                   </div>
                   <div>
-                    <Typography className="!font-bold !text-sm text-gray-900">
+                    <Typography  placeholder={undefined}  className="!font-bold !text-sm text-gray-900">
                       Mathew Glock
                     </Typography>
-                    <Typography className="!font-normal !text-xs text-gray-500">
+                    <Typography   placeholder={undefined}  className="!font-normal !text-xs text-gray-500">
                       Author
                     </Typography>
                   </div>
@@ -93,12 +95,13 @@ export function BlogPost() {
             <Card shadow={false} className="p-0">
               <CardBody className="p-0 pb-5">
                 <Typography
+                 placeholder={undefined} 
                   variant="h3"
                   className="leading-[45px] mb-4 !text-gray-900 "
                 >
                   How Gut Bacteria Affect Our Health and Well-being
                 </Typography>
-                <Typography className="text-normal mb-4 !text-base text-blue-gray-500 ">
+                <Typography  placeholder={undefined}  className="text-normal mb-4 !text-base text-blue-gray-500 ">
                   Dive into the latest research on the human microbiome.
                 </Typography>
                 <div className="flex items-center gap-3">
@@ -112,10 +115,10 @@ export function BlogPost() {
                     />
                   </div>
                   <div>
-                    <Typography className="!font-bold !text-sm text-gray-900">
+                    <Typography  placeholder={undefined}  className="!font-bold !text-sm text-gray-900">
                       Mathew Glock
                     </Typography>
-                    <Typography className="!font-normal !text-xs text-gray-500">
+                    <Typography  placeholder={undefined}  className="!font-normal !text-xs text-gray-500">
                       Author
                     </Typography>
                   </div>
@@ -141,12 +144,13 @@ export function BlogPost() {
                   />
                 </div>
                 <Typography
+                 placeholder={undefined} 
                   variant="h3"
                   className="leading-[45px] mb-6 !text-gray-900"
                 >
                   Biomimicry: Nature-Inspired Innovations
                 </Typography>
-                <Typography className="!font-bold !text-sm text-gray-700">
+                <Typography  placeholder={undefined}  className="!font-bold !text-sm text-gray-700">
                   by Mathew Glock
                 </Typography>
               </CardBody>
@@ -165,12 +169,13 @@ export function BlogPost() {
                   />
                 </div>
                 <Typography
+                 placeholder={undefined} 
                   variant="h3"
                   className="leading-[45px] mb-6 !text-gray-900"
                 >
                   Bringing Back Extinct Species
                 </Typography>
-                <Typography className="!font-bold !text-sm text-gray-700">
+                <Typography  placeholder={undefined}  className="!font-bold !text-sm text-gray-700">
                   by Emma Roberts
                 </Typography>
               </CardBody>
