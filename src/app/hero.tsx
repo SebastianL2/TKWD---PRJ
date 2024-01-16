@@ -2,6 +2,7 @@
 
 import { IconButton, Typography } from "@material-tailwind/react";
 import { Carousel } from "@material-tailwind/react";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -46,7 +47,9 @@ function Hero() {
         </Typography>
         <div className="gap-8 flex">
           <IconButton placeholder={undefined} variant="text" color="white" size="sm">
+            <Link href={"https://www.facebook.com/"}>
             <i className="fa-brands fa-twitter text-base" />
+            </Link>
           </IconButton>
           <IconButton placeholder={undefined} variant="text" color="white" size="sm">
             <i className="fa-brands fa-facebook text-base" />
