@@ -9,7 +9,7 @@ import Comments from "./comments";
 export default function Campaign() {
   return (
     <>
-      <Navbar />
+      <Navbar scrolling={false} />
       <Hero />
       <Content />
       <Comments />

@@ -27,11 +27,11 @@ function NavItem({ children }: { children: React.ReactNode }) {
     </li>
   );
 }
-interface NavbarProps {
+interface Navbar2Props {
   scrolling: boolean;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ scrolling }) => {
+export const Navbar2: React.FC<Navbar2Props> = ({ scrolling }) => {
   const [open, setOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(scrolling);
   function handleOpen() {
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolling }) => {
         </Typography>
         <ul
           className={`ml-8 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
+            isScrolling ? "text-gray-900" : "text-gray-900"
           }`}
         >
           {docsConfig.mainNav.map((group,index) => (
