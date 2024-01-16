@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { docsConfig } from "@/config/docs";
 
 const NAV_MENU = ["Home", "About Us", "Contact Us"];
 
@@ -80,13 +81,15 @@ export function Navbar() {
             isScrolling ? "text-gray-900" : "text-white"
           }`}
         >
-          {NAV_MENU.map((name) => (
-            <NavItem key={name}>{name}</NavItem>
+          {docsConfig.mainNav.map((group,index) => (
+            <Link href={group.href}>
+            <NavItem key={index}>{group.title}</NavItem>
+            </Link>
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
           <Link href={'/login'}>
-          <Button placeholder={undefined} variant="text" color={isScrolling ? "gray" : "white"}>
+          <Button placeholder={undefined} onClick={()=>console.log("#sfa")} variant="text" color={isScrolling ? "gray" : "white"}>
             Log in
           </Button>
           </Link>
@@ -104,7 +107,9 @@ export function Navbar() {
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
+            <Link href={'/login'}>
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+            </Link>
           )}
         </IconButton>
       </div>
