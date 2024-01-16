@@ -12,32 +12,23 @@ import {
 } from "@material-tailwind/react";
 
 import { useState, useEffect } from 'react'
-  interface DatosUsuario {
-    codigo: string;
-    DAN: string;
-    cedula: string;
-    clase: string;
-    createdAt: string;
-    email: string;
-    estadoSolicitud: string;
-    fechaActualizacion: string;
-    fechaExpedicion: string;
-    licencia: string;
-    nombre: string;
-    password: string;
-    role: string;
-    solicita: string;
-    updatedAt: string;
-    vigencia: string;
-  }
+interface DatosUsuario {
+  codigo: string;
+  DAN: string;
+  cedula: string;
+  email: string;
+  password: string;
+  // ... otras propiedades ...
+}
   function About() {
     const [data, setData] = useState<Array<DatosUsuario> | null>(null);
     const [isLoading, setLoading] = useState(true)
     const [message, setMessage] = useState('');
     const handleUsuario = async () => {
       try {
-        const efec =process.env.NEXT_PUBLIC_API_URL;
-        const userData = {
+        const efec = process.env.NEXT_PUBLIC_API_URL;
+  
+        const userData: DatosUsuario = {
           codigo: "123",
           DAN: "456",
           cedula: "789",
@@ -46,35 +37,31 @@ import { useState, useEffect } from 'react'
           password: "contraseñaSegura",
           // ... otras propiedades ...
         };
-        
-        try {
-          const response = await fetch(`${efec}trainer/`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(userData),
-          });
-        
-          const data = await response.json();
-          console.log(data);
-        
-          if (response.ok) {
-            // Success status code, navigate to the desired page
-            // Por ejemplo, podrías redirigir al usuario a una página de éxito
-            // usando react-router o el enrutamiento de tu elección.
-          } else {
-            // Handle other status codes, e.g., display an error message
-            console.error('API request failed with status:', response.status);
-            const errorMessage = data.message;
-            // Aquí puedes manejar el mensaje de error como desees, por ejemplo,
-            // almacenarlo en un estado o mostrarlo al usuario.
-            setMessage(errorMessage);
-          }
-        } catch (error) {
-          console.error('Error during API request:', error);
+  
+        const response = await fetch(`${efec}trainer/`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(userData),
+        });
+  
+        const responseData = await response.json();
+        console.log(responseData);
+  
+        if (response.ok) {
+          // Éxito: el código de estado es 2xx
+          // Por ejemplo, podrías redirigir al usuario a una página de éxito
+          // usando react-router o el enrutamiento de tu elección.
+        } else {
+          // Manejar otros códigos de estado, por ejemplo, mostrar un mensaje de error
+          console.error('API request failed with status:', response.status);
+          const errorMessage = responseData.message || 'Error desconocido';
+          setMessage(errorMessage);
         }
-        
+      } catch (error) {
+        console.error('Error during API request:', error);
+      }
     };
 
   
@@ -144,7 +131,7 @@ import { useState, useEffect } from 'react'
           }
           containerProps={{ className: "-ml-2.5" }}
         />
-        <Button className="mt-6" fullWidth onClick={handel}>
+        <Button className="mt-6" fullWidth onClick={handleUsuario}>
           sign up
         </Button>
         <Typography color="gray" className="mt-4 text-center font-normal">
@@ -159,5 +146,6 @@ import { useState, useEffect } from 'react'
     </>
     );
   }
+  
 
   export default About;
