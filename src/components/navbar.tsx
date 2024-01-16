@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolling }) => {
         <Typography
          placeholder={undefined}
           as="a"
-          href="https://www.material-tailwind.com"
+          href="/"
           target="_blank"
           className="text-sm font-bold"
           color={isScrolling ? "blue-gray" : "white"}
