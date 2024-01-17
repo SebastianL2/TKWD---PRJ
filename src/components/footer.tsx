@@ -57,12 +57,8 @@ export function Footer() {
         </div>
         <div className="mt-16 flex flex-wrap items-end justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
           <div className="text-center md:text-start">
-            <Typography placeholder={undefined} variant="h4" color="blue-gray" className="mb-2">
-              The reward for getting on the stage is fame.
-            </Typography>
-            <Typography placeholder={undefined} className="font-normal !text-gray-700">
-              The price of fame is you can&apos;t get off the stage.
-            </Typography>
+           
+            
           </div>
           <Typography
            placeholder={undefined}

@@ -9,32 +9,22 @@ export function Content() {
     <section className="py-12 px-8">
       <div className="mx-auto max-w-screen-md">
         <Typography placeholder={undefined} color="blue" variant="h6">
-          #science #biology #ecology
+        <Typography
+       placeholder={undefined}
+        variant="h4"
+        className="my-6 md:my-14 md:text-center"
+        color="blue-gray"
+      >
+        Post Your Comment
+      </Typography>
+      
         </Typography>
         <Typography  placeholder={undefined} className="my-12 font-normal !text-gray-500">
-          Biology, often referred to as the &quot;science of life,&quot; is a
-          captivating and multifaceted field that delves into the intricate web
-          of living organisms and the systems that sustain them. From the
-          tiniest microorganisms to the towering giants of the animal kingdom,
-          biology offers a profound understanding of life&apos;s mechanisms,
-          evolution, and interconnectedness.
-        </Typography>
-
-        <Typography   placeholder={undefined} variant="h2" color="blue-gray" className="mt-8 mb-6">
-          Exploring the Wonders of Biology
-        </Typography>
-
-        <Typography  placeholder={undefined} className="my-10 font-normal !text-gray-500">
-          The Branches of Biology Biology encompasses a diverse array of
-          branches, each focusing on specific aspects of living organisms. Here
-          are a few key ones: a. Genetics: Genetics unravels the secrets of
-          heredity, studying how traits are passed from one generation to the
-          next and how variations occur. Recent advancements in genomics have
-          revolutionized medicine, enabling personalized treatments based on an
-          individual&apos;s genetic makeup. b. Ecology: Ecology delves into the
-          relationships between organisms and their environments. It plays a
-          pivotal role in understanding and addressing environmental challenges,
-          such as climate change and biodiversity loss.
+        La Federación Colombiana de Taekwondo:
+        Es un organismo deportivo de derecho privado, sin ánimo de lucro, dotado de personería jurídica, que cumple funciones de interés público y social.
+        El objeto de la Federación:
+        Es fomentar, patrocinar y organizar la práctica del deporte del Taekwondo y sus modalidades deportivas, dentro del ámbito nacional, impulsar programas de interés público y social, y participar en todo evento internacional, en especial del ciclo olímpico,
+        con miras a los Juegos Olímpicos
         </Typography>
         <Image
           width={768}
@@ -94,6 +84,17 @@ export function Content() {
           what&apos;s right and wrong that it&apos;s almost impossible to get a
           pure thought out.
         </Typography>
+
+        <Typography
+       placeholder={undefined}
+        variant="h4"
+        className="my-6 md:my-14 md:text-center"
+        color="blue-gray"
+      >
+        Post Your Comment
+      </Typography>
+
+
         <div className="container mx-auto px-4 py-20">
           <div className="w-full mb-10 md:flex items-center justify-between">
             <div className="flex mb-5 md:mb-0 items-center gap-3">
@@ -155,7 +156,16 @@ export function Content() {
               follow
             </Button>
           </div>
-        </div>
+        </div> 
+        
+        return ({
+              <video className="h-full w-full rounded-lg" controls>
+                <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            
+          }
+      
       </div>
     </section>
   );

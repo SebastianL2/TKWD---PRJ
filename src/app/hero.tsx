@@ -13,17 +13,17 @@ function Hero() {
         <div className="absolute max-w-[160vh] mx-auto  h-[70vh]">
           <Carousel placeholder={undefined} className="rounded-xl h-full">
             <img
-              src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+              src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/62106050_2559222900971747_3712914784039993344_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=zjT2cjTbmRkAX_yrkXV&_nc_ht=scontent-bog1-1.xx&oh=00_AfA5oJ0iDVCRmZHwGbLDnpe6Dds7Q7oADAmHytezFAOsIg&oe=65CE8E30"
               alt="image 1"
               className="h-full w-full object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/41552599_2382501661977206_6423654006744154112_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=Y9xzxHL-os8AX958stZ&_nc_ht=scontent-bog1-1.xx&oh=00_AfBBBIt9RPBpChcklsrTXxOtE7KVuz64Xg1GXQfhZX3ngg&oe=65CEB2D2"
               alt="image 2"
               className="h-full w-full object-cover"
             />
             <img
-              src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+              src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/412852032_734678845356982_2436685674141792805_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeH1IIFrBMR-Gx6M6nriDaxB8TNGkuQutyzxM0aS5C63LC8Q8er4IH8feAiHwpY3QwWEPtpceYbq4c8f1OttvkU2&_nc_ohc=-in2z0ZJ3RIAX8A5n52&_nc_ht=scontent-bog1-1.xx&oh=00_AfBvkOcu728h7jAizKywPs18ASFFRlikJ9Pls5gk8HkRjw&oe=65ACCF94"
               alt="image 3"
               className="h-full w-full object-cover"
             />
@@ -47,15 +47,19 @@ function Hero() {
         </Typography>
         <div className="gap-8 flex">
           <IconButton placeholder={undefined} variant="text" color="white" size="sm">
-            <Link href={"https://www.facebook.com/"}>
+            <Link href={"https://www.facebook.com/FederacionColombianaDeTkd"}>
             <i className="fa-brands fa-twitter text-base" />
             </Link>
           </IconButton>
           <IconButton placeholder={undefined} variant="text" color="white" size="sm">
+          <Link href={"https://www.facebook.com/pages/Ciartkd/874863186013977"}>
             <i className="fa-brands fa-facebook text-base" />
+            </Link>
           </IconButton>
           <IconButton placeholder={undefined} variant="text" color="white" size="sm">
+          <Link href={"https://www.instagram.com/ciart_tkdcol/?hl=es"}>
             <i className="fa-brands fa-instagram text-base" />
+            </Link>
           </IconButton>
         </div>
       </div>
