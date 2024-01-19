@@ -1,11 +1,5 @@
-import { MainNavItem, } from "types/nav"
 
-interface DocsConfig {
-  mainNav: MainNavItem[]
-
-}
-
-export const docsConfig: DocsConfig = {
+export const docsConfig= {
   mainNav: [
     {
       title: "Home",
