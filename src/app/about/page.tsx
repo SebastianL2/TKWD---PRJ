@@ -82,7 +82,8 @@ import { useState, useEffect } from 'react'
         <Typography  placeholder={undefined}  variant="h6" color="blue-gray" className="-mb-3">
             Codigo
           </Typography>
-          <Input crossOrigin={undefined}
+          <Input
+           crossOrigin={undefined}
             
             size="lg"
             name="codigo"
@@ -153,7 +154,7 @@ import { useState, useEffect } from 'react'
           }
           containerProps={{ className: "-ml-2.5" }}
         />
-        <Button className="mt-6" fullWidth onClick={handleUsuario}>
+        <Button placeholder={undefined}  className="mt-6" fullWidth onClick={handleUsuario}>
           sign up
         </Button>
         <Typography  placeholder={undefined}  color="gray" className="mt-4 text-center font-normal">
