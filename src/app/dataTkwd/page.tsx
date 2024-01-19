@@ -39,55 +39,7 @@ import { useState, useEffect } from 'react'
   ];
    
   const TABLE_HEAD = ["Codigo", "Nombre", "Cedula", "DAN", "Licencia","Clase","Fecha Expedicion","Fecha Actualizacion","Vigencia","solicita","Rol","estadoSolicitud","editar"];
-   
 
-  const TABLE_ROWS = [
-    {
-      img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-3.jpg",
-      name: "John Michael",
-      email: "john@creative-tim.com",
-      job: "Manager",
-      org: "Organization",
-      entregado: true,
-      date: "23/04/18",
-    },
-    {
-      img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-2.jpg",
-      name: "Alexa Liras",
-      email: "alexa@creative-tim.com",
-      job: "Programator",
-      org: "Developer",
-      entregado: false,
-      date: "23/04/18",
-    },
-    {
-      img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-1.jpg",
-      name: "Laurent Perrier",
-      email: "laurent@creative-tim.com",
-      job: "Executive",
-      org: "Projects",
-      entregado: false,
-      date: "19/09/17",
-    },
-    {
-      img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-4.jpg",
-      name: "Michael Levi",
-      email: "michael@creative-tim.com",
-      job: "Programator",
-      org: "Developer",
-      entregado: true,
-      date: "24/12/08",
-    },
-    {
-      img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-5.jpg",
-      name: "Richard Gran",
-      email: "richard@creative-tim.com",
-      job: "Manager",
-      org: "Executive",
-      entregado: false,
-      date: "04/10/21",
-    },
-  ];
   interface DatosUsuario {
     codigo: string;
     DAN: string;
@@ -122,6 +74,8 @@ import { useState, useEffect } from 'react'
     console.log("data:",data)
   })
   }, [])
+
+
   
     return (
       <Card placeholder={undefined} className="h-full w-full">
@@ -208,8 +162,7 @@ import { useState, useEffect } from 'react'
               }, index) => {
                 const isLast = index === data.length - 1;
                 const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
-                const formattedFechaExpedicion = format(new Date(fechaExpedicion), 'dd/MM/yyyy');
-                const formattedFechaActualizacion= format(new Date(fechaActualizacion), 'dd/MM/yyyy');
+              
                 fechaActualizacion
                 return (
                   <tr key={nombre}>
@@ -280,7 +233,7 @@ import { useState, useEffect } from 'react'
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
                           <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
-                            {formattedFechaExpedicion}
+                            {fechaExpedicion}
                           </Typography>
                         
                         </div>
@@ -290,7 +243,7 @@ import { useState, useEffect } from 'react'
                       <div className="flex items-center gap-3">
                         <div className="flex flex-col">
                           <Typography placeholder={undefined} variant="small" color="blue-gray" className="font-normal">
-                            {formattedFechaActualizacion}
+                            {fechaActualizacion}
                           </Typography>
                         
                         </div>

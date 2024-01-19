@@ -12,38 +12,40 @@ import {
 } from "@material-tailwind/react";
 
 import { useState, useEffect } from 'react'
-interface DatosUsuario {
-  codigo: string;
-  DAN: string;
-  cedula: string;
-  email: string;
-  password: string;
-  // ... otras propiedades ...
-}
+
   function About() {
-    const [data, setData] = useState<Array<DatosUsuario> | null>(null);
+    const [data, setData] = useState({
+    nombre:'',
+    codigo: '',
+    DAN: '',
+    cedula: '',
+    email: '',
+    password: '',
+    // ... inicializa otras propiedades ...
+  });
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setData({
+      ...data,
+      [name]: value,
+    });
+  };
     const [isLoading, setLoading] = useState(true)
     const [message, setMessage] = useState('');
     const handleUsuario = async () => {
+      console.log("datos: ", data.nombre)
       try {
+      
         const efec = process.env.NEXT_PUBLIC_API_URL;
-  
-        const userData: DatosUsuario = {
-          codigo: "123",
-          DAN: "456",
-          cedula: "789",
-          // ... otras propiedades ...
-          email: "usuario@example.com",
-          password: "contraseñaSegura",
-          // ... otras propiedades ...
-        };
+      
+    
   
         const response = await fetch(`${efec}trainer/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(userData),
+          body: JSON.stringify(data),
         });
   
         const responseData = await response.json();
@@ -69,7 +71,7 @@ interface DatosUsuario {
       <>
       <div className=" mr-60" >
         <Card color="transparent" shadow={false}>
-      <Typography variant="h4" color="blue-gray">
+      <Typography  variant="h4" color="blue-gray">
         Sign Up
       </Typography>
       <Typography color="gray" className="mt-1 font-normal">
@@ -77,12 +79,27 @@ interface DatosUsuario {
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         <div className="mb-1 flex flex-col gap-6">
+        <Typography variant="h6" color="blue-gray" className="-mb-3">
+            Codigo
+          </Typography>
+          <Input
+            size="lg"
+            name="codigo"
+            placeholder="name@mail.com"
+            onChange={handleInputChange}
+            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+            labelProps={{
+              className: "before:content-none after:content-none",
+            }}
+          />
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Your Name
           </Typography>
           <Input
             size="lg"
+            name="nombre"
             placeholder="name@mail.com"
+            onChange={handleInputChange}
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
             labelProps={{
               className: "before:content-none after:content-none",
@@ -95,6 +112,8 @@ interface DatosUsuario {
              
             size="lg"
             placeholder="name@mail.com"
+            name="email"
+            onChange={handleInputChange}
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
             labelProps={{
               className: "before:content-none after:content-none",
@@ -105,6 +124,7 @@ interface DatosUsuario {
           </Typography>
           <Input
             type="password"
+            onChange={handleInputChange}
             size="lg"
             placeholder="********"
             className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
