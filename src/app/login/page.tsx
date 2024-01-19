@@ -47,6 +47,7 @@ const Login = () => {
       console.log(data);
   
       if (response.ok) {
+        console.log("co")
         // Success status code, navigate to the desired page
         router.push('/dataTkwd')
       } else {

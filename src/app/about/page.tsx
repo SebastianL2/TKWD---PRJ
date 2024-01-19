@@ -12,7 +12,14 @@ import {
 } from "@material-tailwind/react";
 
 import { useState, useEffect } from 'react'
-
+interface DatosUsuario {
+  codigo: string;
+  DAN: string;
+  cedula: string;
+  email: string;
+  password: string;
+  // ... otras propiedades ...
+}
   function About() {
     const [data, setData] = useState({
     nombre:'',
@@ -69,7 +76,7 @@ import { useState, useEffect } from 'react'
   
     return (
       <>
-      <div className=" mr-60" >
+      <div className=" mt-20" >
         <Card color="transparent" shadow={false}>
       <Typography  variant="h4" color="blue-gray">
         Sign Up
@@ -79,19 +86,6 @@ import { useState, useEffect } from 'react'
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         <div className="mb-1 flex flex-col gap-6">
-        <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Codigo
-          </Typography>
-          <Input
-            size="lg"
-            name="codigo"
-            placeholder="name@mail.com"
-            onChange={handleInputChange}
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Your Name
           </Typography>
@@ -104,6 +98,7 @@ import { useState, useEffect } from 'react'
             labelProps={{
               className: "before:content-none after:content-none",
             }}
+            onChange={DatosUsuario.}
           />
           <Typography variant="h6" color="blue-gray" className="-mb-3">
             Your Email
@@ -158,9 +153,9 @@ import { useState, useEffect } from 'react'
           Already have an account?{" "}
           <a href="#" className="font-medium text-gray-900">
             Sign In
-          </a>
+          </a>s
         </Typography>
-      </form>
+      </form>s
     </Card>
     </div>
     </>
