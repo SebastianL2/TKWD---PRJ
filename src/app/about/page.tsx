@@ -70,7 +70,7 @@ import { useState, useEffect } from 'react'
     return (
       <>
       <div className=" mr-60" >
-        <Card color="transparent" shadow={false}>
+        <Card placeholder={undefined}  color="transparent" shadow={false}>
       <Typography  placeholder={undefined}  variant="h4" color="blue-gray">
         Sign Up
       </Typography>
