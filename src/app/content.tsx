@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
 export function Content() {
   return (
