@@ -77,7 +77,11 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolling }) => {
           className="text-sm font-bold"
           color={isScrolling ? "blue-gray" : "white"}
         >
-          FEDERACION DE TAEKWONDO
+          <Link href={'/https://play.google.com/store/apps/details?id=com.duhnnae.martialartscombat&pcampaignid=web_share'}>
+          <Button placeholder={undefined} onClick={()=>console.log("#sfa")} variant="text" color={isScrolling ? "gray" : "white"}>
+           APK TKWD
+          </Button>
+          </Link>
         </Typography>
         <ul
           className={`ml-8 hidden items-center gap-6 lg:flex ${
