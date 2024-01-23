@@ -16,6 +16,12 @@ export function Content() {
         color="blue-gray"
       >
         Post Your Comment
+
+        <Link href={'https://play.google.com/store/apps/details?id=com.duhnnae.martialartscombat&pcampaignid=web_share'}>
+          <Button placeholder={undefined} variant="text" color={isScrolling ? "gray" : "white"}>
+           APK TKWD
+          </Button>
+          </Link>
       </Typography>
       
         </Typography>
