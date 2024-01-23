@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolling }) => {
           color={isScrolling ? "blue-gray" : "white"}
         >
           <Link href={'https://play.google.com/store/apps/details?id=com.duhnnae.martialartscombat&pcampaignid=web_share'}>
-          <Button placeholder={undefined} onClick={()=>console.log("#sfa")} variant="text" color={isScrolling ? "gray" : "white"}>
+          <Button placeholder={undefined} variant="text" color={isScrolling ? "gray" : "white"}>
            APK TKWD
           </Button>
           </Link>
